@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>购物车</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <script src="js/rem.js"></script> 
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="css/page.css"/>
+    <link rel="stylesheet" type="text/css" href="css/all.css"/>
+    <link rel="stylesheet" type="text/css" href="css/mui.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/loaders.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/loading.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+<script type="text/javascript">
+		var sum=0
+		var nums=new Array(0,0,0,0)
+		var val=new Array(200,300,150,500)
+	$(window).load(function(){
+		$(".loading").addClass("loader-chanage")
+		$(".loading").fadeOut(300)
+		
+		for(var i=0; i<nums.length;i++){
+			sum+=nums[i]*val[i];
+		}	
+	
+		document.getElementById("sumval").innerText=sum
+		document.getElementById("goods0").innerText=nums[0]
+		document.getElementById("goods1").innerText=nums[1]
+		document.getElementById("goods2").innerText=nums[2]
+		document.getElementById("goods3").innerText=nums[3]
+	})
+		function add0(){
+			nums[0]++
+			document.getElementById("goods0").innerText=nums[0]
+			for(var i=0; i<nums.length;i++){
+			sum+=nums[i]*val[i];
+		}	
+			document.getElementById("sumval").innerText=sum
+		}
+		function min0(){
+			if (nums[0]>0) {
+				nums[0]--
+			}
+			document.getElementById("goods0").innerText=nums[0]
+			for(var i=0; i<nums.length;i++){
+			sum+=nums[i]*val[i];
+		}	
+			document.getElementById("sumval").innerText=sum
+		}
+		function add1(){
+			nums[1]++
+			document.getElementById("goods1").innerText=nums[1]
+			for(var i=0; i<nums.length;i++){
+			sum+=nums[i]*val[i];
+		}	
+			document.getElementById("sumval").innerText=sum
+		}
+		function min1(){
+			if (nums[1]>0) {
+				nums[1]--
+			}
+			document.getElementById("goods1").innerText=nums[1]
+			for(var i=0; i<nums.length;i++){
+			sum+=nums[i]*val[i];
+		}	
+			document.getElementById("sumval").innerText=sum
+		}
+		function add2(){
+			nums[2]++
+			document.getElementById("goods2").innerText=nums[2]
+			for(var i=0; i<nums.length;i++){
+			sum+=nums[i]*val[i];
+		}	
+			document.getElementById("sumval").innerText=sum
+		}
+		function min2(){
+			if (nums[2]>0) {
+				nums[2]--
+			}
+			document.getElementById("goods2").innerText=nums[2]
+			for(var i=0; i<nums.length;i++){
+			sum+=nums[i]*val[i];
+		}	
+			document.getElementById("sumval").innerText=sum
+		}
+		function add3(){
+			nums[3]++
+			document.getElementById("goods3").innerText=nums[3]
+			for(var i=0; i<nums.length;i++){
+			sum+=nums[i]*val[i];
+		}	
+			document.getElementById("sumval").innerText=sum
+		}
+		function min3(){
+			if (nums[3]>0) {
+				nums[3]--
+			}
+			document.getElementById("goods3").innerText=nums[3]
+			for(var i=0; i<nums.length;i++){
+			sum+=nums[i]*val[i];
+		}	
+			document.getElementById("sumval").innerText=sum
+		}
+		function balance(){
+			localStorage.setItem("Sum",sum)
+			window.location.href="submit-order.html"
+		}
+		function del(obj){
+			switch(obj.id)
+			{
+			case "trash1":
+  			document.getElementById("first").style.visibility="hidden";
+  			break;
+			case "trash2":
+			document.getElementById("second").style.visibility="hidden";
+  			break;
+  			case "trash3":
+  			document.getElementById("third").style.visibility="hidden";
+  			break;
+  			case "trash4":
+  			document.getElementById("forth").style.visibility="hidden";
+			default:
+  			break;
+			}
+		}
+	
+</script>
+</head>
+<!--loading页开始-->
+<div class="loading">
+	<div class="loader">
+        <div class="loader-inner pacman">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+	</div>
+</div>
+<!--loading页结束-->
+	<body>
+		<!--header star-->
+		<header class="mui-bar mui-bar-nav" id="header">
+			<a class="btn" href="javascript:history.go(-1)">
+	            <i class="iconfont icon-fanhui"></i>
+	        </a>
+	        <div class="top-sch-box top-sch-boxtwo flex-col">
+	                      购物车
+	        </div>
+	        <a class="btn" href="#">
+	            <i class="iconfont icon-lajixiang"></i>
+	        </a>
+	    </header>
+	    <!--header end-->
+	    
+	    <div class="warp warptwo clearfloat">
+	    	<div class="shopcar clearfloat">
+	    		<div class="list clearfloat fl" id="first" >
+	    			<div class="xuan clearfloat fl">
+	    				<div class="radio" > 
+						    <label>
+						        <input type="checkbox" name="sex" value="" />
+						        <div class="option"></div>
+						    </label>
+						</div>
+	    			</div>
+	    			<a href="#">
+		    			<div class="tu clearfloat fl">
+		    				<span></span>
+		    				<img src="upload/9.jpg"/>
+		    			</div>
+		    			<div class="right clearfloat fl">
+		    				<p class="tit over">不知道不知道</p>
+		    				<p class="fu-tit over">作者：爱谁谁</p>
+		    				<p class="jifen over">200购物币+100积分</p>
+		    				<div class="bottom clearfloat">
+		    					<div class="zuo clearfloat fl">
+		    						<ul>
+		    							<li><img onclick="min0()" src="img/jian.png"/></li>
+		    							<li id="goods0"></li>
+		    							<li><img onclick="add0()" src="img/jia.png"/></li>
+		    						</ul>
+		    					</div>
+		    					<i  class="iconfont icon-lajixiang fr" id="trash1" onclick="del(this)"></i>
+		    				</div>
+		    			</div>
+	    			</a>
+	    		</div>
+	    		<div class="list clearfloat fl" id="second">
+	    			<div class="xuan clearfloat fl">
+	    				<div class="radio" > 
+						    <label>
+						        <input type="checkbox" name="sex" value="" />
+						        <div class="option"></div>
+						    </label>
+						</div>
+	    			</div>
+	    			<a href="#">
+		    			<div class="tu clearfloat fl">
+		    				<span></span>
+		    				<img src="upload/9.jpg"/>
+		    			</div>
+		    			<div class="right clearfloat fl">
+		    				<p class="tit over">不知道不知道</p>
+		    				<p class="fu-tit over">作者：爱谁谁</p>
+		    				<p class="jifen over">300购物币+700积分</p>
+		    				<div class="bottom clearfloat">
+		    					<div class="zuo clearfloat fl">
+		    						<ul>
+		    							<li><img onclick="min1()" src="img/jian.png"/></li>
+		    							<li id="goods1"></li>
+		    							<li><img onclick="add1()" src="img/jia.png"/></li>
+		    						</ul>
+		    					</div>
+		    					<i class="iconfont icon-lajixiang fr" id="trash2"></i>
+		    				</div>
+		    			</div>
+	    			</a>
+	    		</div>
+	    		<div class="list clearfloat fl" id="third">
+	    			<div class="xuan clearfloat fl">
+	    				<div class="radio" > 
+						    <label>
+						        <input type="checkbox" name="sex" value="" />
+						        <div class="option"></div>
+						    </label>
+						</div>
+	    			</div>
+	    			<a href="#">
+		    			<div class="tu clearfloat fl">
+		    				<span></span>
+		    				<img src="upload/9.jpg"/>
+		    			</div>
+		    			<div class="right clearfloat fl">
+		    				<p class="tit over">不知道不知道</p>
+		    				<p class="fu-tit over">作者：爱谁谁</p>
+		    				<p class="jifen over">150购物币+700积分</p>
+		    				<div class="bottom clearfloat">
+		    					<div class="zuo clearfloat fl">
+		    						<ul>
+		    							<li><img onclick="min2()" src="img/jian.png"/></li>
+		    							<li id="goods2"></li>
+		    							<li><img onclick="add2()" src="img/jia.png"/></li>
+		    						</ul>
+		    					</div>
+		    					<i class="iconfont icon-lajixiang fr" id="trash3"></i>
+		    				</div>
+		    			</div>
+	    			</a>
+	    		</div>
+	    		<div class="list clearfloat fl" id="forth">
+	    			<div class="xuan clearfloat fl">
+	    				<div class="radio" > 
+						    <label>
+						        <input type="checkbox" name="sex" value="" />
+						        <div class="option"></div>
+						    </label>
+						</div>
+	    			</div>
+	    			<a href="#">
+		    			<div class="tu clearfloat fl">
+		    				<span></span>
+		    				<img src="upload/9.jpg"/>
+		    			</div>
+		    			<div class="right clearfloat fl">
+		    				<p class="tit over">不知道不知道</p>
+		    				<p class="fu-tit over">作者：爱谁谁</p>
+		    				<p class="jifen over">500购物币+200积分</p>
+		    				<div class="bottom clearfloat">
+		    					<div class="zuo clearfloat fl">
+		    						<ul>
+		    							<li><img onclick="min3()" src="img/jian.png"/></li>
+		    							<li id="goods3"></li>
+		    							<li><img onclick="add3()" src="img/jia.png"/></li>
+		    						</ul>
+		    					</div>
+		    					<i class="iconfont icon-lajixiang fr" id="trash4"></i>
+		    				</div>
+		    			</div>
+	    			</a>
+	    		</div>
+	    	</div>
+	    </div>
+	    
+	    <!--settlement star-->
+	    <div class="settlement clearfloat">
+	    	<div class="zuo clearfloat fl box-s">
+	    		合计：<span id="sumval"></span>
+	    	</div>
+	    	<a onclick="balance()" class="fl db">
+	    		立即结算
+	    	</a>
+	    </div>
+	    <!--settlement end-->
+	    
+		<!--footer star-->
+	    <footer class="page-footer fixed-footer" id="footer">
+			<ul>
+				<li>
+					<a href="index.html">
+						<i class="iconfont icon-shouye"></i>
+						<p>首页</p>
+					</a>
+				</li>
+				<li>
+					<a href="cation.html">
+						<i class="iconfont icon-icon04"></i>
+						<p>分类</p>
+					</a>
+				</li>
+				<li class="active">
+					<a href="shopcar.html">
+						<i class="iconfont icon-gouwuche"></i>
+						<p>购物车</p>
+					</a>
+				</li>
+				<li>
+					<a href="login.html">
+						<i class="iconfont icon-yonghuming"></i>
+						<p>我的</p>
+					</a>
+				</li>
+			</ul>
+		</footer>
+		<!--footer end-->
+	</body>
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+	<script src="js/mui.min.js"></script>
+	<script src="js/others.js"></script>
+	<script type="text/javascript" src="js/hmt.js" ></script>
+	<script src="slick/slick.js" type="text/javascript" ></script>
+	<!--插件-->
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<script src="js/swiper.jquery.min.js"></script>
+</html>

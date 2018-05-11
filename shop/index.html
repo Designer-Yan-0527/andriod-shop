@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>首页</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <script src="js/rem.js"></script> 
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="css/page.css"/>
+    <link rel="stylesheet" type="text/css" href="css/all.css"/>
+    <link rel="stylesheet" type="text/css" href="css/mui.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/loaders.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/loading.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+<script type="text/javascript">
+	$(window).load(function(){
+		$(".loading").addClass("loader-chanage")
+		$(".loading").fadeOut(300)
+	})
+</script>
+</head>
+<!--loading页开始-->
+<div class="loading">
+	<div class="loader">
+        <div class="loader-inner pacman">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+	</div>
+</div>
+<!--loading页结束-->
+	<body>		
+		<!--header star-->
+		<header class="mui-bar mui-bar-nav" id="header">
+			<a class="btn slide-menu" href="#">
+	            <i class="iconfont icon-iconfontcaidan"></i>
+	        </a>
+	        <div class="top-sch-box flex-col">
+	            <div class="centerflex">
+	                <i class="fdj iconfont icon-sousuo"></i>
+	                <input type="text" name="" id="" value="" class="sch-txt" placeholder="输入您要搜索的商品" />
+	            </div>
+	        </div>
+	        <a class="btn" href="#">
+	            <i class="iconfont icon-erweima"></i>
+	        </a>
+	    </header>
+	    <!--header end-->
+	    
+	    <!-- 侧边导航 -->
+		<div class="slide-mask"></div>
+		<aside class="slide-wrapper">
+		  <div>
+			<ul>
+			  <li><a href="list.html">人文社科</a></li>
+			  <li><a href="list.html">成功/励志</a></li>
+			  <li><a href="list.html">生活</a></li>
+			  <li><a href="list.html">科技</a></li>
+			  <li><a href="list.html">社会心理学</a></li>
+			  <li><a href="list.html">教材教辅</a></li>
+			  <li><a href="list.html">动漫幽默</a></li>
+			  <li><a href="list.html">口碑童书</a></li>
+			  <li><a href="list.html">经典著作</a></li>
+			</ul>
+		  </div>
+		</aside>
+	    
+		<div id="main" class="clearfloat warp">			
+		    <div class="mui-content">
+				<!--banner开始-->
+				<div class="banner swiper-container">
+		            <div class="swiper-wrapper">
+		                <div class="swiper-slide"><a href="javascript:void(0)"><img class="swiper-lazy" data-src="upload/banner.jpg" alt=""></a></div>
+		                <div class="swiper-slide"><a href="javascript:void(0)"><img class="swiper-lazy" data-src="upload/banner.jpg" alt=""></a></div>
+		                <div class="swiper-slide"><a href="javascript:void(0)"><img class="swiper-lazy" data-src="upload/banner.jpg" alt=""></a></div>
+		                <div class="swiper-slide"><a href="javascript:void(0)"><img class="swiper-lazy" data-src="upload/banner.jpg" alt=""></a></div>
+		            </div>
+		        </div>
+		        <!--banner结束-->
+		        <!--第一栏分类开始-->
+		        <div class="cation clearfloat box-s">
+		        	<ul>
+		        		<li>
+		        			<a href="#">
+		        				<img src="img/icon1.png"/>
+		        				<p>报单专区</p>
+		        			</a>
+		        		</li>
+		        		<li>
+		        			<a href='lianmeng.html' spj="sb">
+		        				<img src="img/icon2.png"/>
+		        				<p>联盟商家</p>
+		        			</a> 
+		        		</li>
+		        		<li>
+		        			<a href="#">
+		        				<img src="img/icon3.png"/>
+		        				<p>猜你喜欢</p>
+		        			</a>
+		        		</li>
+		        		<li>
+		        			<a href="#">
+		        				<img src="img/icon4.png"/>
+		        				<p>热门书籍</p>
+		        			</a>
+		        		</li>
+		        	</ul>
+		        </div>
+		        <!--第一栏分类结束-->
+		        <!--滚动公告开始-->
+		        <div class="notice clearfloat box-s">
+		        	<p class="tit clearfloat fl">每日好评：</p>
+		        	<div class="left fl clearfloat box-s">
+						<div class="slider autoplay">
+							<div>这里是二手书籍内容可以手滑滚动</div>
+							<div>这里是二手书籍内容可以手滑滚动</div>
+							<div>这里是二手书籍内容可以手滑滚动</div>
+							<div>这里是二手书籍内容可以手滑滚动</div>
+							<div>这里是二手书籍内容可以手滑滚动</div>
+							<div>这里是二手书籍内容可以手滑滚动</div>
+						</div>							
+					</div>		
+					<a href="#" class="nmore clearfloat fr">更多</a>
+		        </div>
+		        <!--滚动公告结束-->
+		        
+		        <!--boutique star-->
+		        <div class="boutique clearfloat box-s">
+		        	<div class="boutit clearfloat">
+		        		<span></span>
+		        		<samp>精品任选</samp>
+		        	</div>
+		        	<div class="content clearfloat">
+		        		<ul>
+		        			<li>
+		        				<a href="#">
+		        					<img src="upload/1.jpg"/>
+		        				</a>
+		        			</li>
+		        			<li>
+		        				<a href="#">
+		        					<img src="upload/2.jpg"/>
+		        				</a>
+		        			</li>
+		        		</ul>
+		        	</div>
+		        </div>
+		        <!--boutique end-->
+		        
+		        <!--seller star-->
+
+		        
+		        <!--onnew star-->
+		        <div class="onnew clearfloat">
+		        	<div class="boutit clearfloat">
+		        		<span></span>
+		        		<samp>每周上新</samp>
+		        	</div>
+		        	<div class="content clearfloat">
+		        		<div class="top clearfloat">
+		        			<div class="list clearfloat fl box-s">
+		        				<a href="detail.html">
+			        				<div class="zuo clearfloat fl box-s">
+			        					<p class="tit over">悬疑推理</p>
+				        				<span class="over db">东野圭吾精选</span>
+			        				</div>
+			        				<div class="tu clearfloat fr">
+			        					<span></span>
+			        					<img src="upload/6.jpg"/>
+			        				</div>
+		        				</a>
+		        			</div>
+		        			<div class="list clearfloat fl box-s">
+		        				<a href="detail.html">
+			        				<div class="zuo clearfloat fl box-s">
+			        					<p class="tit over">悬疑推理</p>
+				        				<span class="over db">东野圭吾精选</span>
+			        				</div>
+			        				<div class="tu clearfloat fr">
+			        					<span></span>
+			        					<img src="upload/6.jpg"/>
+			        				</div>
+		        				</a>
+		        			</div>
+		        		</div>
+		        		<div class="bottom clearfloat">
+		        			<div class="list clearfloat fl">
+		        				<a href="detail.html">
+		        					<div class="shang clearfloat fl box-s">
+			        					<p class="tit over">一起找书</p>
+				        				<span class="over db">东野圭吾粉丝来这里</span>
+			        				</div>
+			        				<div class="tu clearfloat fr">
+			        					<span></span>
+			        					<img src="upload/7.jpg"/>
+			        				</div>
+		        				</a>
+		        			</div>
+		        			<div class="list clearfloat fl">
+		        				<a href="detail.html">
+		        					<div class="shang clearfloat fl box-s">
+			        					<p class="tit over">一起找书</p>
+				        				<span class="over db">东野圭吾粉丝来这里</span>
+			        				</div>
+			        				<div class="tu clearfloat fr">
+			        					<span></span>
+			        					<img src="upload/7.jpg"/>
+			        				</div>
+		        				</a>
+		        			</div>
+		        			<div class="list clearfloat fl">
+		        				<a href="detail.html">
+		        					<div class="shang clearfloat fl box-s">
+			        					<p class="tit over">一起找书</p>
+				        				<span class="over db">东野圭吾粉丝来这里</span>
+			        				</div>
+			        				<div class="tu clearfloat fr">
+			        					<span></span>
+			        					<img src="upload/7.jpg"/>
+			        				</div>
+		        				</a>
+		        			</div>
+		        		</div>
+		        	</div>
+		        </div>
+		        <!--onnew end-->
+		        
+		        <!--theme star-->
+		        <div class="theme clearfloat">
+		        	<div class="boutit clearfloat">
+		        		<span></span>
+		        		<samp>主题馆</samp>
+		        	</div>
+		        	<div class="content clearfloat">
+		        		<div class="list clearfloat">
+			        		<a href="list.html">
+			        			<div class="shang clearfloat fl box-s">
+		        					<p class="tit over">死宅轻小说</p>
+			        				<span class="over db">渡航</span>
+		        				</div>
+		        				<div class="tu clearfloat fr">
+		        					<span></span>
+		        					<img src="upload/10.jpg"/>
+		        				</div>
+			        		</a>
+			        	</div>
+			        	<div class="list clearfloat">
+			        		<a href="list.html">
+			        			<div class="shang clearfloat fl box-s">
+		        					<p class="tit over">罗生门</p>
+			        				<span class="over db">芥川龙之介</span>
+		        				</div>
+		        				<div class="tu clearfloat fr">
+		        					<span></span>
+		        					<img src="upload/8.jpg"/>
+		        				</div>
+			        		</a>
+			        	</div>
+			        	<div class="list clearfloat">
+			        		<a href="list.html">
+			        			<div class="shang clearfloat fl box-s">
+		        					<p class="tit over">太宰治</p>
+			        				<span class="over db">人间失格</span>
+		        				</div>
+		        				<div class="tu clearfloat fr">
+		        					<span></span>
+		        					<img src="upload/11.jpg"/>
+		        				</div>
+			        		</a>
+			        	</div>
+			        	<div class="list clearfloat">
+			        		<a href="list.html">
+			        			<div class="shang clearfloat fl box-s">
+		        					<p class="tit over">太宰治</p>
+			        				<span class="over db">人间失格 </span>
+		        				</div>
+		        				<div class="tu clearfloat fr">
+		        					<span></span>
+		        					<img src="upload/12.jpg"/>
+		        				</div>
+			        		</a>
+			        	</div>
+			        	<div class="list clearfloat">
+			        		<a href="list.html">
+			        			<div class="shang clearfloat fl box-s">
+		        					<p class="tit over">太宰治</p>
+			        				<span class="over db">人间失格</span>
+		        				</div>
+		        				<div class="tu clearfloat fr">
+		        					<span></span>
+		        					<img src="upload/13.jpg"/>
+		        				</div>
+			        		</a>
+			        	</div>
+			        	<div class="list clearfloat">
+			        		<a href="list.html">
+			        			<div class="shang clearfloat fl box-s">
+		        					<p class="tit over">太宰治</p>
+			        				<span class="over db">人间失格</span>
+		        				</div>
+		        				<div class="tu clearfloat fr">
+		        					<img src="upload/14.jpg"/>
+		        				</div>
+			        		</a>
+			        	</div>
+			        	<div class="list clearfloat">
+			        		<a href="list.html">
+			        			<div class="shang clearfloat fl box-s">
+		        					<p class="tit over">爱的战士</p>
+			        				<span class="over db">虚渊玄</span>
+		        				</div>
+		        				<div class="tu clearfloat fr">
+		        					<span></span>
+		        					<img src="upload/15.jpg"/>
+		        				</div>
+			        		</a>
+			        	</div>
+			        	<div class="list clearfloat">
+			        		<a href="list.html">
+			        			<div class="shang clearfloat fl box-s">
+		        					<p class="tit over">二手教课书</p>
+			        				<span class="over db">爱买不买</span>
+		        				</div>
+		        				<div class="tu clearfloat fr">
+		        					<span></span>
+		        					<img src="upload/16.jpg"/>
+		        				</div>
+			        		</a>
+			        	</div>
+			        	<div class="list clearfloat">
+			        		<a href="list.html">
+			        			<div class="shang clearfloat fl box-s">
+		        					<p class="tit over">虐妹狂魔</p>
+			        				<span class="over db">冈本伦</span>
+		        				</div>
+		        				<div class="tu clearfloat fr">
+		        					<span></span>
+		        					<img src="upload/17.jpg"/>
+		        				</div>
+			        		</a>
+			        	</div>
+		        	</div>				        	
+		        </div>
+		        <!--theme end-->
+		        
+		        <!--like star-->
+		        <div class="like clearfloat box-s">
+		        	<div class="boutit clearfloat">
+		        		<span></span>
+		        		<samp>猜你喜欢</samp>
+		        	</div>
+		        	<div class="content clearfloat">
+		        		<div class="list clearfloat fl">
+		        			<a href="detail.html">
+			        			<div class="tu clearfloat">
+			        				<img src="upload/9.jpg"/>
+			        			</div>
+			        			<div class="bottom clearfloat box-s">
+			        				<p class="over">是时候吃药了大河内一楼精选</p>
+			        				<span>¥108.00</span>
+			        			</div>
+		        			</a>
+		        		</div>
+		        		<div class="list clearfloat fl">
+		        			<a href="detail.html">
+			        			<div class="tu clearfloat">
+			        				<img src="upload/9.jpg"/>
+			        			</div>
+			        			<div class="bottom clearfloat box-s">
+			        				<p class="over">是时候吃药了大河内一楼精选</p>
+			        				<span>¥108.00</span>
+			        			</div>
+		        			</a>
+		        		</div>
+		        		<div class="list clearfloat fl">
+		        			<a href="detail.html">
+			        			<div class="tu clearfloat">
+			        				<img src="upload/9.jpg"/>
+			        			</div>
+			        			<div class="bottom clearfloat box-s">
+			        				<p class="over">是时候吃药了大河内一楼精选</p>
+			        				<span>¥108.00</span>
+			        			</div>
+		        			</a>
+		        		</div>
+		        		<div class="list clearfloat fl">
+		        			<a href="detail.html">
+			        			<div class="tu clearfloat">
+			        				<img src="upload/9.jpg"/>
+			        			</div>
+			        			<div class="bottom clearfloat box-s">
+			        				<p class="over">是时候吃药了大河内一楼精选</p>
+			        				<span>¥108.00</span>
+			        			</div>
+		        			</a>
+		        		</div>
+		        	</div>
+		        </div>
+		        <!--like end-->
+	        </div
+		</div>
+		<!--footer star-->
+		<footer class="page-footer fixed-footer" id="footer">
+			<ul>
+				<li class="active">
+					<a href="index.html">
+						<i class="iconfont icon-shouye"></i>
+						<p>首页</p>
+					</a>
+				</li>
+				<li>
+					<a href="cation.html">
+						<i class="iconfont icon-icon04"></i>
+						<p>分类</p>
+					</a>
+				</li>
+				<li>
+					<a href="shopcar.html">
+						<i class="iconfont icon-gouwuche"></i>
+						<p>购物车</p>
+					</a>
+				</li>
+				<li>
+					<a href="login.html">
+						<i class="iconfont icon-yonghuming"></i>
+						<p>我的</p>
+					</a>
+				</li>
+			</ul>
+		</footer>
+		<!--footer end-->
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+		 <script src="js/mui.min.js"></script>
+		<script src="js/others.js"></script>
+		<script type="text/javascript" src="js/hmt.js" ></script>
+		<script src="slick/slick.js" type="text/javascript" ></script>
+		<!--插件-->
+		<link rel="stylesheet" href="css/swiper.min.css">
+		<script src="js/swiper.jquery.min.js"></script>
+		<!--新闻资讯滚动-->
+		<script type="text/javascript">
+			$('.autoplay').slick({
+			  slidesToShow: 1,
+			  slidesToScroll: 1,
+			  autoplay: true,
+			  autoplaySpeed: 2000,
+			});
+		
+		</script>
+		    <!--<script type="text/javascript">
+		    	mui.init();
+			mui('.cation').on('tap', 'a', function(e) {
+						var targetTab = this.getAttribute('spj');
+						console.log(targetTab);
+						mui.openWindow({
+							url: targetTab,
+							id: targetTab,
+//							styles: { // 窗口参数 参考5+规范中的WebviewStyle,也就是说WebviewStyle下的参数都可以在此设置
+//								titleNView: { // 窗口的标题栏控件
+//									titleText: "标题栏", // 标题栏文字,当不设置此属性时，默认加载当前页面的标题，并自动更新页面的标题
+//									titleColor: "#000000", // 字体颜色,颜色值格式为"#RRGGBB",默认值为"#000000"
+//									titleSize: "17px", // 字体大小,默认17px
+//									backgroundColor: "#F7F7F7", // 控件背景颜色,颜色值格式为"#RRGGBB",默认值为"#F7F7F7"
+//									progress: { // 标题栏控件的进度条样式
+//										color: "#00FF00", // 进度条颜色,默认值为"#00FF00"  
+//										height: "2px" // 进度条高度,默认值为"2px"         
+//									},
+//									splitLine: { // 标题栏控件的底部分割线，类似borderBottom
+//										color: "#CCCCCC", // 分割线颜色,默认值为"#CCCCCC"  
+//										height: "1px" // 分割线高度,默认值为"2px"
+//									}
+//								}
+//							}
+						});
+				});
+		    </script>-->
+	</body>
+
+</html>
